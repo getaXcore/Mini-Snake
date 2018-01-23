@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mini Snake</string>
+    <string name="mode_ready">New Start\nSwipe Up To Play</string>
+    <string name="mode_pause">Paused\nSwipe Up To Resume</string>
+    <string name="mode_lose_prefix">Game Over\nScore: </string>
+    <string name="mode_lose_suffix">\nSwipe Up To Play</string>
+    <string name="snake_layout_text_text"></string>
+    <string name="unitid1">ca-app-pub-8505828987629407/5092962085</string>
+    <string name="unitid2">ca-app-pub-8505828987629407/2200039580</string>
+    <string name="banner_ad_unitID">ca-app-pub-8505828987629407/5519477695</string>
+</resources>

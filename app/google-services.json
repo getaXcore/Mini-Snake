@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "152086231867",
+    "firebase_url": "https://snake-5b628.firebaseio.com",
+    "project_id": "snake-5b628",
+    "storage_bucket": "snake-5b628.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152086231867:android:de88eb3c25d955eb",
+        "android_client_info": {
+          "package_name": "com.wordpress.getaufansepta.snake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152086231867-3p5ohhq8qu36a7ej5ahd80u2jejg6c1i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wordpress.getaufansepta.snake",
+            "certificate_hash": "f6bb972fd9aa2640c6c428a65b312f74ee9ec082"
+          }
+        },
+        {
+          "client_id": "152086231867-b9p659gh4hodl66ii9k7730jpajhu14o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBbcQqzSs5fGHR1x57z3IwlOXJLOknGeA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152086231867-b9p659gh4hodl66ii9k7730jpajhu14o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

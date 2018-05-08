@@ -55,9 +55,10 @@ public class SnakeView extends TileView {
      * mScore: used to track the number of apples captured mMoveDelay: number of
      * milliseconds between snake movements. This will decrease as apples are
      * captured.
+     * version 1.0 mMoveDelay = 600
      */
     private long mScore = 0;
-    private long mMoveDelay = 600;
+    private long mMoveDelay = 200;
     /**
      * mLastMove: tracks the absolute time when the snake last moved, and is
      * used to determine if a move should be made based on mMoveDelay.
@@ -130,6 +131,19 @@ public class SnakeView extends TileView {
 
     }
 
+    /**
+     * version 1.0 default position in initNewGame()
+     * mSnakeTrail.add(new Coordinate(7, 7))
+     * mSnakeTrail.add(new Coordinate(6, 7))
+     * mSnakeTrail.add(new Coordinate(5, 7))
+     * mSnakeTrail.add(new Coordinate(4, 7))
+     * mSnakeTrail.add(new Coordinate(3, 7))
+     * mSnakeTrail.add(new Coordinate(2, 7))
+     * in the corner
+     *
+     * mNextDirection = NORTH
+     */
+
     public void initNewGame() {
         mSnakeTrail.clear();
         mAppleList.clear();
@@ -137,19 +151,19 @@ public class SnakeView extends TileView {
         // For now we're just going to load up a short default eastbound snake
         // that's just turned north
 
-        mSnakeTrail.add(new Coordinate(7, 7));
-        mSnakeTrail.add(new Coordinate(6, 7));
-        mSnakeTrail.add(new Coordinate(5, 7));
-        mSnakeTrail.add(new Coordinate(4, 7));
-        mSnakeTrail.add(new Coordinate(3, 7));
-        mSnakeTrail.add(new Coordinate(2, 7));
-        mNextDirection = NORTH;
+        mSnakeTrail.add(new Coordinate(30,30));
+        mSnakeTrail.add(new Coordinate(29,30));
+        mSnakeTrail.add(new Coordinate(28,30));
+        mSnakeTrail.add(new Coordinate(27,30));
+        mSnakeTrail.add(new Coordinate(26,30));
+        mSnakeTrail.add(new Coordinate(25,30));
+        mNextDirection = SOUTH;
 
         // Two apples to start with
         addRandomApple();
         addRandomApple();
 
-        mMoveDelay = 600;
+        mMoveDelay = 200;
         mScore = 0;
     }
 
@@ -445,9 +459,9 @@ public class SnakeView extends TileView {
         Coordinate newHead = new Coordinate(1, 1);
 
         //play sound when moving
-        /*MediaPlayer mp = MediaPlayer.create(getContext(),R.raw.movetune);
-        mp.setLooping(false);
-        mp.stop();*/
+        //MediaPlayer mp = MediaPlayer.create(getContext(),R.raw.movetune);
+        //mp.setLooping(false);
+        //mp.stop();
 
         mDirection = mNextDirection;
 
@@ -524,6 +538,7 @@ public class SnakeView extends TileView {
             }
             index++;
         }
+
 
     }
 
